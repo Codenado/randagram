@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  post 'anagram/find'
+  post 'anagrams/find'
 
-  get 'anagram/index'
+  get 'anagrams/index'
 
-  root "anagram#index"
+  root "anagrams#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
