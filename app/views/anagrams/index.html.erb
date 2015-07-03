@@ -1,8 +1,8 @@
-<div class="container">
-	<%= form_tag("/anagrams/find", method: "post", remote: true) do %>
-	  <%= label_tag(:q, "Search for:") %>
-	  <%= text_field_tag("term") %>
-	  <%= submit_tag("Search") %>
-	<% end %>
-	<ol></ol>
+<div class="content">
+	<h3>Find Anagram For</h3>
+		<%= form_tag("/anagrams/find", method: "post", remote: true) do %>
+	  	<%= text_field_tag("term") %>
+	  	<%= submit_tag("Search") %>
+		<% end %>
+	<div class="anagrams"></div>
 </div>	
