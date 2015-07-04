@@ -25,3 +25,10 @@
     margin-right: auto;
     width: 50em
 }
+.header{
+	text-align: :center;
+	padding-top: 20px;
+	background-color: #F8F8F8;
+	border-radius: 25px;
+	border-style: groove;
+}
