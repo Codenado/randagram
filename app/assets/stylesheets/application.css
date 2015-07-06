@@ -26,9 +26,18 @@
     width: 50em
 }
 .header{
-	text-align: :center;
+	text-align: center;
 	padding-top: 20px;
 	background-color: #F8F8F8;
 	border-radius: 25px;
 	border-style: groove;
+}
+
+.form {
+	
+	display: inline-block;
+}
+
+.angrams {
+	display: inline-block;
 }
