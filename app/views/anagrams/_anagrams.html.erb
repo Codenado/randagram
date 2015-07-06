@@ -1,5 +1,11 @@
 <ol>
-<% @anagrams.each do |anagram| %>
-	<li><%= anagram.text %></li>
-<% end %>	
+	<% if @anagrams %>
+		<% @anagrams.each do |anagram| %>
+			<li><%= anagram.text %></li>
+		<% end %>
+	<% else %>	
+		<p>There are no anagrams for that word</p>	
+	<% end %>
+
+
 </ol>

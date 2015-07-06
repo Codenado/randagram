@@ -23,7 +23,8 @@
 	background-color: #F8F8F8;
 	margin-left: auto;
     margin-right: auto;
-    width: 50em
+    width: 50em;
+    height: 250px;
 }
 .header{
 	text-align: center;
@@ -36,8 +37,11 @@
 .form {
 	
 	display: inline-block;
+
 }
 
-.angrams {
+.anagrams {
+	width: 40%;
 	display: inline-block;
+	
 }
