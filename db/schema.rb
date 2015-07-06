@@ -16,22 +16,12 @@ ActiveRecord::Schema.define(version: 20150701185422) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "lengths", force: :cascade do |t|
-    t.integer  "size"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "lengths", ["size"], name: "index_lengths_on_size", using: :btree
-
   create_table "words", force: :cascade do |t|
-    t.string   "text"
-    t.integer  "length_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "text"
+    t.string "anagram_key"
   end
 
-  add_index "words", ["length_id"], name: "index_words_on_length_id", using: :btree
+  add_index "words", ["anagram_key"], name: "index_words_on_anagram_key", using: :btree
+  add_index "words", ["text"], name: "index_words_on_text", using: :btree
 
-  add_foreign_key "words", "lengths"
 end

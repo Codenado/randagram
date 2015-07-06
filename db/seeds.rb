@@ -7,6 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 File.open("db/dictionary.txt", "r").each_line do |word|
-	length = Length.find_or_create_by(size: word.chomp.length)
-	length.words.create(text: word.chomp)
+	Word.create(text: word.chomp, anagram_key: word.chomp.split("").sort.join(""))
 end	

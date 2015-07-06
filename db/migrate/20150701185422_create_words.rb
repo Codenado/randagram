@@ -1,10 +1,8 @@
 class CreateWords < ActiveRecord::Migration
   def change
     create_table :words do |t|
-      t.string :text	
-      t.belongs_to :length, index: true, foreign_key: true
-
-      t.timestamps null: false
+    	t.string :text, index: true
+		t.string :anagram_key, index: true
     end
   end
 end

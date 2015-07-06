@@ -1,8 +1,10 @@
+<div class="header">RANDAGRAM</div>
+
 <div class="content">
 	<h3>Find Anagram For</h3>
 		<%= form_tag("/anagrams/find", method: "post", remote: true) do %>
 	  	<%= text_field_tag("term") %>
-	  	<%= submit_tag("Search") %>
+	  	<%= submit_tag("Search", class: "button")  %>
 		<% end %>
 	<div class="anagrams"></div>
 </div>	
