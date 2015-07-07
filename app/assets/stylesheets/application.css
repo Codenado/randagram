@@ -14,6 +14,10 @@
  *= require_self
  */
 
+ body {
+ 	background-color: #99FFFF;
+ }
+
 .content {
 	border-radius: 25px;
 	border-style: groove;
@@ -24,14 +28,18 @@
 	margin-left: auto;
     margin-right: auto;
     width: 50em;
-    height: 250px;
+    height: 200px;
 }
 .header{
 	text-align: center;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 20px;
 	background-color: #F8F8F8;
 	border-radius: 25px;
 	border-style: groove;
+	padding-bottom: 30px;
 }
 
 .form {
