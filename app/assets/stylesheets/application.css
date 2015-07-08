@@ -16,6 +16,7 @@
 
  body {
  	background-color: #99FFFF;
+
  }
 
 .content {
@@ -40,6 +41,7 @@
 	border-radius: 25px;
 	border-style: groove;
 	padding-bottom: 30px;
+	text-shadow: 2px 2px #ff0000;
 }
 
 .form {
