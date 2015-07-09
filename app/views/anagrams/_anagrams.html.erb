@@ -1,8 +1,8 @@
-<ol>
+<table class="table-bordered">
 	<% if @anagrams %>
 		<% if @anagrams.length > 0 %>
 			<% @anagrams.each do |anagram| %>
-				<li><%= anagram.text %></li>
+				<tr><td><%= anagram.text %></td></tr>
 			<% end %>
 		<% else %>	
 			<p>There are no anagrams for that word</p>	
@@ -10,4 +10,4 @@
 	<% else %>	
 		<p>That is not a valid word</p>	
 	<% end %>
-</ol>
+</table>
